@@ -4,9 +4,21 @@
     {
       "src": "index.html",
       "use": "@vercel/static"
+    },
+    {
+      "src": "privacy.html",
+      "use": "@vercel/static"
     }
   ],
   "routes": [
+    {
+      "src": "/privacy(\\.html)?/?",
+      "dest": "/privacy.html"
+    },
+    {
+      "src": "/privacidade/?",
+      "dest": "/privacy.html"
+    },
     {
       "src": "/(.*)",
       "dest": "/index.html"
